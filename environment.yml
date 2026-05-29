@@ -1,0 +1,9 @@
+name: buaa-data-structure-kg
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - networkx>=3.0
+      - pyvis>=0.3.2
