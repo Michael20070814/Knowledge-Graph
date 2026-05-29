@@ -4,17 +4,17 @@
 
 ## 环境
 
-我已创建空 conda 环境：
+创建 conda 环境：
 
 ```bash
-conda activate /home/michael/Project/AI/.conda-env
+conda create -n conda-env python=3.10
 ```
 
-该环境未安装 Python、pyvis、networkx 或其他包。依赖安装请你执行，例如：
+依赖安装请执行，例如：
 
 ```bash
-conda install -p /home/michael/Project/AI/.conda-env python=3.10 pip
-/home/michael/Project/AI/.conda-env/bin/python -m pip install -r project/requirements.txt
+conda activate conda-env
+conda-env/bin/python -m pip install -r project/requirements.txt
 ```
 
 如果你想用已有 Python 环境，也可以直接安装：
@@ -26,7 +26,8 @@ python -m pip install -r project/requirements.txt
 ## 运行
 
 ```bash
-cd /home/michael/Project/AI/project
+git clone git@github.com:Michael20070814/Knowledge-Graph.git
+cd Knowledge-Graph
 python main.py
 ```
 
